@@ -1,0 +1,42 @@
+{
+    // 使用 IntelliSense 了解相关属性。 
+    // 悬停以查看现有属性的描述。
+    // 欲了解更多信息，请访问: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Python: train",
+            "type": "python",
+            "request": "launch",
+            "program": "/root/anaconda3/envs/segment/lib/python3.8/site-packages/torch/distributed/launch.py",
+            "args": [
+                // "torch.distributed.launch",
+                "--nproc_per_node",
+                "5",
+                "distributed.py"
+            ],
+            "env": {
+                "CUDA_VISIBLE_DEVICES": "0,1,2,3,4"
+            },
+            "console": "integratedTerminal",
+            "justMyCode": true
+        },
+        {
+            "name": "Python: fcn",
+            "type": "python",
+            "request": "launch",
+            "program": "/root/anaconda3/envs/segment/lib/python3.8/site-packages/torch/distributed/launch.py",
+            "args": [
+                // "torch.distributed.launch",
+                "--nproc_per_node",
+                "5",
+                "fcnTrain.py"
+            ],
+            "env": {
+                "CUDA_VISIBLE_DEVICES": "0,1,2,3,5"
+            },
+            "console": "integratedTerminal",
+            "justMyCode": true
+        }
+    ]
+}

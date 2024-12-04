@@ -1,4 +1,5 @@
 
 /data
 /result
-/utils
+/utils/__pycache__
+utils/_init_paths.py

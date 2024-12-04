@@ -2,6 +2,7 @@ import argparse
 import time
 import os
 import torch
+import torch_mlu
 import torch.nn as nn
 import torch.nn.parallel
 import torch.backends.cudnn as cudnn
@@ -20,17 +21,18 @@ parser.add_argument('--seed', default=None, type=int, help='seed for initializin
 parser.add_argument('--batch_size','--batch-size', default=256, type=int)
 parser.add_argument('--epochs', default=200, type=int)
 parser.add_argument('--lr', default=0.1, type=float)
-parser.add_argument('--gpu', type=str, default='0' ,help="gpu choose, eg. '0,1,2,...' ")
+parser.add_argument('--mlu', type=str, default='0' ,help="gpu choose, eg. '0,1,2,...' ")
 
 def main():
     args = parser.parse_args()
-    args.nprocs = torch.cuda.device_count()
+    args.nprocs = torch.mlu.device_count()
+    # args.nprocs = torch.cuda.device_count()
     # set training gpu
-    os.environ['CUDA_VISIBLE_DEVICES'] = args.gpu
-    n_gpu = len(args.gpu.split(','))
-    gpus = [ _ for _ in range(n_gpu) ]
+    os.environ['MLU_VISIBLE_DEVICES'] = args.mlu
+    n_mlu = len(args.mlu.split(','))
+    gmlus = [ _ for _ in range(n_mlu) ]
 
-    main_worker(gpus=gpus, args=args)
+    main_worker(gpus=gmlus, args=args)
 
 
 def main_worker(gpus, args):
@@ -39,14 +41,14 @@ def main_worker(gpus, args):
     # gpus[0]表示使用第一个可用的GPU作为主设备
     # 这行代码的作用是将当前进程绑定到指定的GPU设备上
     # 在多GPU训练时很重要,因为需要指定一个主GPU来协调数据的分发和结果的汇总
-    torch.cuda.set_device('cuda:{}'.format(gpus[0]))
+    torch.mlu.set_device('mlu:{}'.format(gpus[0]))
 
     # 定义模型，损失函数，优化器
     model = resnet18()
     criterion = nn.CrossEntropyLoss()
     optimizer = torch.optim.SGD(model.parameters(), args.lr, momentum=0.9, weight_decay=1e-4)
 
-    model.cuda()
+    model.mlu()
     # 如果使用的GPU数量大于1，需要用nn.DataParallel来修饰模型
     if len(gpus) > 1:
         # 使用 DataParallel 进行模型并行化处理
@@ -76,8 +78,8 @@ def main_worker(gpus, args):
             # non_blocking=True 表示数据传输到GPU的过程是异步的
             # 这意味着CPU不需要等待数据完全传输到GPU就可以执行下一步操作
             # 可以提高训练效率,但要注意确保在使用数据前传输已完成
-            images = images.cuda(non_blocking=True)  
-            labels = labels.cuda(non_blocking=True)
+            images = images.mlu(non_blocking=True)  
+            labels = labels.mlu(non_blocking=True)
 
             outputs = model(images)
             loss = criterion(outputs, labels)
@@ -116,8 +118,8 @@ def validate(val_loader, model, criterion):
     with torch.no_grad():
         end = time.time()
         for i, (images, target) in enumerate(val_loader):
-            images = images.cuda(non_blocking=True)
-            target = target.cuda(non_blocking=True)
+            images = images.mlu(non_blocking=True)
+            target = target.mlu(non_blocking=True)
 
             # compute output
             output = model(images)

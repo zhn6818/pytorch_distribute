@@ -37,7 +37,7 @@
             "request": "launch",
             "program": "dataparallel.py",
             "console": "integratedTerminal",
-            "args": ["--gpu", "0,1,2,3"]
+            "args": ["--mlu", "0,1"]
         }
     ]
 }

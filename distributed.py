@@ -9,7 +9,7 @@ import torch.optim
 import torch.utils.data
 import torch.utils.data.distributed
 import sys
-sys.path.append('/data1/zhn/server/pytorch-distributed-training/utils')
+sys.path.append('./utils')
 
 from utils.model import resnet18
 from utils.dataset import get_train_dataset, get_test_dataset

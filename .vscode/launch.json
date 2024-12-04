@@ -5,14 +5,14 @@
             "name": "Python: train",
             "type": "debugpy",
             "request": "launch",
-            "program": "/root/anaconda3/envs/segment/lib/python3.8/site-packages/torch/distributed/launch.py",
+            "program": "/torch/src/pytorch/torch/distributed/launch.py",
             "args": [
                 "--nproc_per_node",
-                "5",
+                "2",
                 "distributed.py"
             ],
             "env": {
-                "CUDA_VISIBLE_DEVICES": "0,1,2,3,4"
+                "MLU_VISIBLE_DEVICES": "0,1"
             },
             "console": "integratedTerminal"
         },

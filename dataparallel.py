@@ -35,6 +35,10 @@ def main():
 
 def main_worker(gpus, args):
     
+    # 设置当前进程使用的主GPU设备
+    # gpus[0]表示使用第一个可用的GPU作为主设备
+    # 这行代码的作用是将当前进程绑定到指定的GPU设备上
+    # 在多GPU训练时很重要,因为需要指定一个主GPU来协调数据的分发和结果的汇总
     torch.cuda.set_device('cuda:{}'.format(gpus[0]))
 
     # 定义模型，损失函数，优化器
@@ -45,6 +49,10 @@ def main_worker(gpus, args):
     model.cuda()
     # 如果使用的GPU数量大于1，需要用nn.DataParallel来修饰模型
     if len(gpus) > 1:
+        # 使用 DataParallel 进行模型并行化处理
+        # device_ids: 指定要使用的GPU设备ID列表，与前面定义的gpus对应
+        # output_device: 指定输出结果汇总的GPU设备，这里选择第一个GPU(gpus[0])作为主GPU
+        # DataParallel 会自动将数据分发到各个GPU上进行并行计算，然后将结果汇总到主GPU上
         model = nn.DataParallel(model, device_ids=gpus, output_device=gpus[0])
 
     train_scheduler = optim.lr_scheduler.MultiStepLR(optimizer, milestones=[60, 120, 160], gamma=0.2)
@@ -65,7 +73,10 @@ def main_worker(gpus, args):
 
         for step, (images, labels) in enumerate(train_loader):
             # 将对应进程的数据放到 GPU 上
-            images = images.cuda(non_blocking=True)
+            # non_blocking=True 表示数据传输到GPU的过程是异步的
+            # 这意味着CPU不需要等待数据完全传输到GPU就可以执行下一步操作
+            # 可以提高训练效率,但要注意确保在使用数据前传输已完成
+            images = images.cuda(non_blocking=True)  
             labels = labels.cuda(non_blocking=True)
 
             outputs = model(images)
@@ -82,7 +93,7 @@ def main_worker(gpus, args):
                     loss,
                     optimizer.param_groups[0]['lr'],
                     epoch=epoch+1,
-                    trained_samples=step * args.batch_size + len(images),
+                    trained_samples=step * args.batch_size + len(images), 
                     total_samples=len(train_loader.dataset)
                 ))
 

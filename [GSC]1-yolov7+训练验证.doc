@@ -1,0 +1,795 @@
+Date: Fri, 29 Nov 2024 10:45:16 +0800 (CST)
+Message-ID: <1398453578.12209.1732848316260@wiki.cambricon.com>
+Subject: Exported From Confluence
+MIME-Version: 1.0
+Content-Type: multipart/related; 
+	boundary="----=_Part_12208_197670720.1732848316259"
+
+------=_Part_12208_197670720.1732848316259
+Content-Type: text/html; charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+Content-Location: file:///C:/exported.html
+
+<html xmlns:o=3D'urn:schemas-microsoft-com:office:office'
+      xmlns:w=3D'urn:schemas-microsoft-com:office:word'
+      xmlns:v=3D'urn:schemas-microsoft-com:vml'
+      xmlns=3D'urn:w3-org-ns:HTML'>
+<head>
+    <meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf-8=
+">
+    <title>[GSC]1-yolov7 =E8=AE=AD=E7=BB=83=E9=AA=8C=E8=AF=81</title>
+    <!--[if gte mso 9]>
+    <xml>
+        <o:OfficeDocumentSettings>
+            <o:TargetScreenSize>1024x640</o:TargetScreenSize>
+            <o:PixelsPerInch>72</o:PixelsPerInch>
+            <o:AllowPNG/>
+        </o:OfficeDocumentSettings>
+        <w:WordDocument>
+            <w:View>Print</w:View>
+            <w:Zoom>90</w:Zoom>
+            <w:DoNotOptimizeForBrowser/>
+        </w:WordDocument>
+    </xml>
+    <![endif]-->
+    <style>
+                <!--
+        @page Section1 {
+            size: 8.5in 11.0in;
+            margin: 1.0in;
+            mso-header-margin: .5in;
+            mso-footer-margin: .5in;
+            mso-paper-source: 0;
+        }
+
+        table {
+            border: solid 1px;
+            border-collapse: collapse;
+        }
+
+        table td, table th {
+            border: solid 1px;
+            padding: 5px;
+        }
+
+        td {
+            page-break-inside: avoid;
+        }
+
+        tr {
+            page-break-after: avoid;
+        }
+
+        div.Section1 {
+            page: Section1;
+        }
+
+        /* Confluence print stylesheet. Common to all themes for print medi=
+a */
+/* Full of !important until we improve batching for print CSS */
+
+@media print {
+    #main {
+        padding-bottom: 1em !important; /* The default padding of 6em is to=
+o much for printouts */
+    }
+
+    body {
+        font-family: Arial, Helvetica, FreeSans, sans-serif;
+        font-size: 10pt;
+        line-height: 1.2;
+    }
+
+    body, #full-height-container, #main, #page, #content, .has-personal-sid=
+ebar #content {
+        background: #fff !important;
+        color: #000 !important;
+        border: 0 !important;
+        width: 100% !important;
+        height: auto !important;
+        min-height: auto !important;
+        margin: 0 !important;
+        padding: 0 !important;
+        display: block !important;
+    }
+
+    a, a:link, a:visited, a:focus, a:hover, a:active {
+        color: #000;
+    }
+
+    #content h1,
+    #content h2,
+    #content h3,
+    #content h4,
+    #content h5,
+    #content h6 {
+        font-family: Arial, Helvetica, FreeSans, sans-serif;
+        page-break-after: avoid;
+    }
+
+    pre {
+        font-family: Monaco, "Courier New", monospace;
+    }
+
+    #header,
+    .aui-header-inner,
+    #navigation,
+    #sidebar,
+    .sidebar,
+    #personal-info-sidebar,
+    .ia-fixed-sidebar,
+    .page-actions,
+    .navmenu,
+    .ajs-menu-bar,
+    .noprint,
+    .inline-control-link,
+    .inline-control-link a,
+    a.show-labels-editor,
+    .global-comment-actions,
+    .comment-actions,
+    .quick-comment-container,
+    #addcomment {
+        display: none !important;
+    }
+
+    /* CONF-28544 cannot print multiple pages in IE */
+    #splitter-content {
+        position: relative !important;
+    }
+
+    .comment .date::before {
+        content: none !important; /* remove middot for print view */
+    }
+
+    h1.pagetitle img {
+        height: auto;
+        width: auto;
+    }
+
+    .print-only {
+        display: block;
+    }
+
+    #footer {
+        position: relative !important; /* CONF-17506 Place the footer at en=
+d of the content */
+        margin: 0;
+        padding: 0;
+        background: none;
+        clear: both;
+    }
+
+    #poweredby {
+        border-top: none;
+        background: none;
+    }
+
+    #poweredby li.print-only {
+        display: list-item;
+        font-style: italic;
+    }
+
+    #poweredby li.noprint {
+        display: none;
+    }
+
+    /* no width controls in print */
+    .wiki-content .table-wrap,
+    .wiki-content p,
+    .panel .codeContent,
+    .panel .codeContent pre,
+    .image-wrap {
+        overflow: visible !important;
+    }
+
+    /* TODO - should this work? */
+    #children-section,
+    #comments-section .comment,
+    #comments-section .comment .comment-body,
+    #comments-section .comment .comment-content,
+    #comments-section .comment p {
+        page-break-inside: avoid;
+    }
+
+    #page-children a {
+        text-decoration: none;
+    }
+
+    /**
+     hide twixies
+
+     the specificity here is a hack because print styles
+     are getting loaded before the base styles. */
+    #comments-section.pageSection .section-header,
+    #comments-section.pageSection .section-title,
+    #children-section.pageSection .section-header,
+    #children-section.pageSection .section-title,
+    .children-show-hide {
+        padding-left: 0;
+        margin-left: 0;
+    }
+
+    .children-show-hide.icon {
+        display: none;
+    }
+
+    /* personal sidebar */
+    .has-personal-sidebar #content {
+        margin-right: 0px;
+    }
+
+    .has-personal-sidebar #content .pageSection {
+        margin-right: 0px;
+    }
+
+    .no-print, .no-print * {
+        display: none !important;
+    }
+}
+-->
+    </style>
+</head>
+<body>
+    <h1>[GSC]1-yolov7 =E8=AE=AD=E7=BB=83=E9=AA=8C=E8=AF=81</h1>
+    <div class=3D"Section1">
+        <p></p>
+<div id=3D"markdown-macro-1" class=3D"markdown-macro">
+<ul>=20
+<li><a href=3D"#=E7=8E=AF=E5=A2=83=E4=BF=A1=E6=81=AF">=E7=8E=AF=E5=A2=83=E4=
+=BF=A1=E6=81=AF</a></li>=20
+<li><a href=3D"#=E5=9F=BA=E7=A1=80=E4=BF=A1=E6=81=AF">=E5=9F=BA=E7=A1=80=E4=
+=BF=A1=E6=81=AF</a></li>=20
+<li><a href=3D"#=E6=A8=A1=E5=9E=8B=E6=95=B0=E6=8D=AE=E9=9B=86=E4=BF=A1=E6=
+=81=AF">=E6=A8=A1=E5=9E=8B=E6=95=B0=E6=8D=AE=E9=9B=86=E4=BF=A1=E6=81=AF</a>=
+</li>=20
+<li><a href=3D"#=E5=8F=82=E7=9C=8B=E6=96=87=E6=A1=A3">=E5=8F=82=E7=9C=8B=E6=
+=96=87=E6=A1=A3</a></li>=20
+<li><a href=3D"#=E7=8E=AF=E5=A2=83=E5=87=86=E5=A4=87">=E7=8E=AF=E5=A2=83=E5=
+=87=86=E5=A4=87</a></li>=20
+<li><a href=3D"#=E9=A9=B1=E5=8A=A8=E5=AE=89=E8=A3=85">=E9=A9=B1=E5=8A=A8=E5=
+=AE=89=E8=A3=85</a></li>=20
+<li><a href=3D"#docker-=E5=8A=A0=E8=BD=BD">Docker =E5=8A=A0=E8=BD=BD</a>=20
+<ul>=20
+<li><a href=3D"#docker-images-=E6=9F=A5=E7=9C=8B=E5=BD=93=E5=89=8D=E7=B3=BB=
+=E7=BB=9F=E5=8A=A0=E8=BD=BD=E9=95=9C=E5=83=8F">docker images =E6=9F=A5=E7=
+=9C=8B=E5=BD=93=E5=89=8D=E7=B3=BB=E7=BB=9F=E5=8A=A0=E8=BD=BD=E9=95=9C=E5=83=
+=8F</a></li>=20
+<li><a href=3D"#docker-load-=E9=95=9C=E5=83=8F">docker load =E9=95=9C=E5=83=
+=8F</a></li>=20
+</ul> </li>=20
+<li><a href=3D"#=E8=BF=9B=E5=85=A5docker-=E6=B5=8B=E8=AF=95=E5=AE=B9=E5=99=
+=A8">=E8=BF=9B=E5=85=A5docker =E6=B5=8B=E8=AF=95=E5=AE=B9=E5=99=A8</a></li>=
+=20
+<li><a href=3D"#=E4=BB=A3=E7=A0=81=E9=80=82=E9=85=8D">=E4=BB=A3=E7=A0=81=E9=
+=80=82=E9=85=8D</a></li>=20
+<li><a href=3D"#=E4=BB=A3=E7=A0=81=E5=92=8C=E6=A8=A1=E5=9E=8B=E4=B8=8B=E8=
+=BD=BD">=E4=BB=A3=E7=A0=81=E5=92=8C=E6=A8=A1=E5=9E=8B=E4=B8=8B=E8=BD=BD</a>=
+</li>=20
+<li><a href=3D"#=E4=BB=A3=E7=A0=81=E9=80=82=E9=85=8Dmlu">=E4=BB=A3=E7=A0=81=
+=E9=80=82=E9=85=8D(MLU)</a>=20
+<ul>=20
+<li><a href=3D"#=E4=BF=AE=E6=94=B9=E8=AF=B4=E6=98=8E">=E4=BF=AE=E6=94=B9=E8=
+=AF=B4=E6=98=8E</a></li>=20
+<li><a href=3D"#=E4=BB=A3=E7=A0=81=E4=BF=AE=E6=94=B9">=E4=BB=A3=E7=A0=81=E4=
+=BF=AE=E6=94=B9</a></li>=20
+<li><a href=3D"#=E4=BD=BF=E7=94=A8torch_gpu2mlu=E5=B7=A5=E5=85=B7=E8=BF=9B=
+=E8=A1=8C=E4=BF=AE=E6=94=B9">=E4=BD=BF=E7=94=A8torch_gpu2mlu=E5=B7=A5=E5=85=
+=B7=E8=BF=9B=E8=A1=8C=E4=BF=AE=E6=94=B9</a></li>=20
+<li><a href=3D"#=E5=85=B6=E5=AE=83=E4=BB=A3=E7=A0=81=E4=BF=AE=E6=94=B9">=E5=
+=85=B6=E5=AE=83=E4=BB=A3=E7=A0=81=E4=BF=AE=E6=94=B9</a></li>=20
+</ul> </li>=20
+<li><a href=3D"#=E9=AA=8C=E8=AF=81=E6=B5=8B=E8=AF=95mlu">=E9=AA=8C=E8=AF=81=
+=E6=B5=8B=E8=AF=95=EF=BC=88MLU=EF=BC=89</a>=20
+<ul>=20
+<li><a href=3D"#=E5=AE=89=E8=A3=85=E4=BE=9D=E8=B5=96">=E5=AE=89=E8=A3=85=E4=
+=BE=9D=E8=B5=96</a></li>=20
+<li><a href=3D"#=E6=95=B0=E6=8D=AE=E9=9B=86=E5=87=86=E5=A4=87">=E6=95=B0=E6=
+=8D=AE=E9=9B=86=E5=87=86=E5=A4=87</a></li>=20
+<li><a href=3D"#=E8=AE=AD=E7=BB=83=E9=AA=8C=E8=AF=81">=E8=AE=AD=E7=BB=83=E9=
+=AA=8C=E8=AF=81</a></li>=20
+<li><a href=3D"#=E6=8E=A8=E7=90=86=E9=AA=8C=E8=AF=81">=E6=8E=A8=E7=90=86=E9=
+=AA=8C=E8=AF=81</a></li>=20
+</ul> </li>=20
+</ul>=20
+<h1 id=3D"=E7=8E=AF=E5=A2=83=E4=BF=A1=E6=81=AF">=E7=8E=AF=E5=A2=83=E4=BF=A1=
+=E6=81=AF</h1>=20
+<h2 id=3D"=E5=9F=BA=E7=A1=80=E4=BF=A1=E6=81=AF">=E5=9F=BA=E7=A1=80=E4=BF=A1=
+=E6=81=AF</h2>=20
+<table class=3D"confluenceTable">=20
+<thead>=20
+<tr>=20
+<th class=3D"confluenceTh"> =E6=A8=A1=E5=9D=97 </th>=20
+<th class=3D"confluenceTh"> =E4=BF=A1=E6=81=AF </th>=20
+<th class=3D"confluenceTh"> =E5=A4=87=E6=B3=A8 </th>=20
+</tr>=20
+</thead>=20
+<tbody>=20
+<tr>=20
+<td class=3D"confluenceTd"> =E6=9D=BF=E5=8D=A1 </td>=20
+<td class=3D"confluenceTd"> MLU370-X8 </td>=20
+<td class=3D"confluenceTd"> </td>=20
+</tr>=20
+<tr>=20
+<td class=3D"confluenceTd"> SDK=E7=89=88=E6=9C=AC </td>=20
+<td class=3D"confluenceTd"> Pytorch1.9 </td>=20
+<td class=3D"confluenceTd"> </td>=20
+</tr>=20
+<tr>=20
+<td class=3D"confluenceTd"> Docker=E9=95=9C=E5=83=8F </td>=20
+<td class=3D"confluenceTd"> yellow.hub.cambricon.com/pytorch/pytorch:v1.14.=
+0-torch1.9-ubuntu18.04-py37 </td>=20
+<td class=3D"confluenceTd"> </td>=20
+</tr>=20
+</tbody>=20
+</table>=20
+<h2 id=3D"=E6=A8=A1=E5=9E=8B=E6=95=B0=E6=8D=AE=E9=9B=86=E4=BF=A1=E6=81=AF">=
+=E6=A8=A1=E5=9E=8B=E6=95=B0=E6=8D=AE=E9=9B=86=E4=BF=A1=E6=81=AF</h2>=20
+<table class=3D"confluenceTable">=20
+<thead>=20
+<tr>=20
+<th class=3D"confluenceTh"> =E6=A8=A1=E5=9D=97 </th>=20
+<th class=3D"confluenceTh"> =E4=BF=A1=E6=81=AF </th>=20
+<th class=3D"confluenceTh"> =E5=A4=87=E6=B3=A8 </th>=20
+</tr>=20
+</thead>=20
+<tbody>=20
+<tr>=20
+<td class=3D"confluenceTd"> =E4=BB=A3=E7=A0=81 </td>=20
+<td class=3D"confluenceTd"> <a href=3D"https://github.com/WongKinYiu/yolov7=
+.git">https://github.com/WongKinYiu/yolov7.git</a> </td>=20
+<td class=3D"confluenceTd"> master </td>=20
+</tr>=20
+<tr>=20
+<td class=3D"confluenceTd"> =E6=A8=A1=E5=9E=8B </td>=20
+<td class=3D"confluenceTd"> <a href=3D"https://github.com/WongKinYiu/yolov7=
+/releases/download/v0.1/yolov7-w6.pt">https://github.com/WongKinYiu/yolov7/=
+releases/download/v0.1/yolov7-w6.pt</a> </td>=20
+<td class=3D"confluenceTd"> </td>=20
+</tr>=20
+<tr>=20
+<td class=3D"confluenceTd"> =E6=95=B0=E6=8D=AE=E9=9B=86 </td>=20
+<td class=3D"confluenceTd"> COCO2017 </td>=20
+<td class=3D"confluenceTd"> </td>=20
+</tr>=20
+</tbody>=20
+</table>=20
+<h2 id=3D"=E5=8F=82=E7=9C=8B=E6=96=87=E6=A1=A3">=E5=8F=82=E7=9C=8B=E6=96=87=
+=E6=A1=A3</h2>=20
+<ul>=20
+<li><a href=3D"https://www.cambricon.com/docs/sdk_1.12.0/cambricon_pytorch_=
+1.14.0/porting_1.9/index.html">=E5=AF=92=E6=AD=A6=E7=BA=AAPyTorch v1.9=E7=
+=BD=91=E7=BB=9C=E7=A7=BB=E6=A4=8D=E6=89=8B=E5=86=8C</a></li>=20
+<li><a href=3D"https://www.cambricon.com/docs/sdk_1.12.0/cambricon_pytorch_=
+1.14.0/api_support_1.9/index.html">=E5=AF=92=E6=AD=A6=E7=BA=AAPyTorch v1.9 =
+API =E6=94=AF=E6=8C=81=E5=88=97=E8=A1=A8</a></li>=20
+<li><a href=3D"https://www.cambricon.com/docs/sdk_1.12.0/driver_5.10.10/use=
+r_guide_5.10.10/index.html">=E5=AF=92=E6=AD=A6=E7=BA=AA=E9=A9=B1=E5=8A=A8=
+=E5=AE=89=E8=A3=85=E5=8C=85=E4=BD=BF=E7=94=A8=E6=89=8B=E5=86=8C</a></li>=20
+<li><a href=3D"https://www.cambricon.com/docs/sdk_1.12.0/driver_5.10.10/cnm=
+on_5.10.10/index.html">=E5=AF=92=E6=AD=A6=E7=BA=AA CNMon =E7=94=A8=E6=88=B7=
+=E6=89=8B=E5=86=8C</a></li>=20
+</ul>=20
+<h1 id=3D"=E7=8E=AF=E5=A2=83=E5=87=86=E5=A4=87">=E7=8E=AF=E5=A2=83=E5=87=86=
+=E5=A4=87</h1>=20
+<h2 id=3D"=E9=A9=B1=E5=8A=A8=E5=AE=89=E8=A3=85">=E9=A9=B1=E5=8A=A8=E5=AE=89=
+=E8=A3=85</h2>=20
+<ul>=20
+<li>=E6=B5=8B=E8=AF=95=E7=8E=AF=E5=A2=83=E9=9C=80=E8=A6=81=E5=AE=89=E8=A3=
+=85MLU=E9=A9=B1=E5=8A=A8=EF=BC=8C=E5=8F=AF=E4=BB=A5=E9=80=9A=E8=BF=87 **cnm=
+on ** =E6=A3=80=E6=9F=A5=E5=BD=93=E5=89=8D=E7=8E=AF=E5=A2=83=E6=83=85=E5=86=
+=B5=E4=BB=A5=E5=8F=8AMLU=E5=8A=9E=E5=8D=A1=E4=BF=A1=E6=81=AF=E7=AD=89</li>=
+=20
+</ul>=20
+<pre><code>Wed Jun 14 11:19:10 2023
++--------------------------------------------------------------------------=
+----+
+| CNMON v5.10.10                                               Driver v5.10=
+.10 |
++-------------------------------+----------------------+-------------------=
+----+
+| Card  VF  Name       Firmware |               Bus-Id | Util        Ecc-Er=
+ror |
+| Fan   Temp      Pwr:Usage/Cap |         Memory-Usage | SR-IOV   Compute-M=
+ode |
+|=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=
+=3D=3D=3D=3D=3D=3D=3D+=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=
+=3D=3D=3D=3D=3D+=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=
+=3D=3D=3D=3D|
+| 0     /   MLU370-X8    v1.1.6 |         0000:24:00.0 | 0%                =
+N/A |
+|  0%   32C        104 W/ 250 W |     0 MiB/ 23374 MiB | N/A           Defa=
+ult |
++-------------------------------+----------------------+-------------------=
+----+
+| 1     /   MLU370-X8    v1.1.6 |         0000:27:00.0 | 0%                =
+N/A |
+|  0%   39C        104 W/ 250 W |     0 MiB/ 23374 MiB | N/A           Defa=
+ult |
++-------------------------------+----------------------+-------------------=
+----+
+| 2     /   MLU370-X8    v1.1.6 |         0000:2D:00.0 | 0%                =
+N/A |
+|  0%   31C        104 W/ 250 W |     0 MiB/ 23374 MiB | N/A           Defa=
+ult |
++-------------------------------+----------------------+-------------------=
+----+
+| 3     /   MLU370-X8    v1.1.6 |         0000:30:00.0 | 0%                =
+N/A |
+|  0%   39C        104 W/ 250 W |     0 MiB/ 23374 MiB | N/A           Defa=
+ult |
++-------------------------------+----------------------+-------------------=
+----+
+
++--------------------------------------------------------------------------=
+----+
+| Processes:                                                               =
+    |
+|  Card  MI  PID     Command Line                             MLU Memory Us=
+age |
+|=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=
+=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=
+=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=
+=3D=3D=3D=3D|
+|  No running processes found                                              =
+    |
++--------------------------------------------------------------------------=
+----+
+</code></pre>=20
+<h2 id=3D"Docker=E5=8A=A0=E8=BD=BD">Docker =E5=8A=A0=E8=BD=BD</h2>=20
+<ul>=20
+<li>=E6=89=80=E6=9C=89=E7=A4=BA=E4=BE=8B=E5=9D=87=E5=9F=BA=E4=BA=8Edocker=
+=E8=BF=90=E8=A1=8C=EF=BC=8C=E8=BF=90=E8=A1=8C=E6=B5=8B=E8=AF=95=E4=BE=8B=E5=
+=AD=90=E5=89=8D=E8=AF=B7=E6=A3=80=E6=9F=A5docker =E6=98=AF=E5=90=A6=E5=8A=
+=A0=E8=BD=BD</li>=20
+</ul>=20
+<h3 id=3D"dockerimages=E6=9F=A5=E7=9C=8B=E5=BD=93=E5=89=8D=E7=B3=BB=E7=BB=
+=9F=E5=8A=A0=E8=BD=BD=E9=95=9C=E5=83=8F">docker images =E6=9F=A5=E7=9C=8B=
+=E5=BD=93=E5=89=8D=E7=B3=BB=E7=BB=9F=E5=8A=A0=E8=BD=BD=E9=95=9C=E5=83=8F</h=
+3>=20
+<pre><code>yellow.hub.cambricon.com/pytorch/pytorch                      v1=
+.14.0-torch1.9-ubuntu18.04-py37                4fec082a9bc1   3 weeks ago  =
+   8.84GB
+</code></pre>=20
+<h3 id=3D"dockerload=E9=95=9C=E5=83=8F">docker load =E9=95=9C=E5=83=8F</h3>=
+=20
+<ul>=20
+<li>=E5=A6=82=E6=9E=9C=E6=9C=AA=E5=8A=A0=E8=BD=BD=E9=95=9C=E5=83=8F=EF=BC=
+=8C=E5=8F=AF=E4=BD=BF=E7=94=A8docker load=E8=BF=9B=E8=A1=8C=E5=8A=A0=E8=BD=
+=BD</li>=20
+</ul>=20
+<pre><code>sudo docker load -i pytorch-v1.14.0-torch1.9-ubuntu18.04-py37.ta=
+r.gz
+</code></pre>=20
+<h2 id=3D"=E8=BF=9B=E5=85=A5docker=E6=B5=8B=E8=AF=95=E5=AE=B9=E5=99=A8">=E8=
+=BF=9B=E5=85=A5docker =E6=B5=8B=E8=AF=95=E5=AE=B9=E5=99=A8</h2>=20
+<ul>=20
+<li>=E5=90=AF=E5=8A=A8=E5=AE=B9=E5=99=A8=E8=84=9A=E6=9C=AC=E5=8F=82=E7=9C=
+=8B(run_pytorch1.9.sh)</li>=20
+</ul>=20
+<pre><code>#!/bin/bash
+
+ver=3Dv1.14.0
+export MY_CONTAINER=3D"mlu370_pytorch_ubuntu18.04_torch1.9_guoshoucai_${ver=
+}_`whoami`"
+export IMAGE_NAME=3D"yellow.hub.cambricon.com/pytorch/pytorch:${ver}-torch1=
+.9-ubuntu18.04-py37"
+
+num=3D`docker ps -a|grep -w "$MY_CONTAINER$"|wc -l`
+echo $num
+echo $MY_CONTAINER
+echo $IMAGE_NAME
+
+if [ 0 -eq $num ];then
+=09xhost +
+=09docker run \
+=09=09-e DISPLAY=3Dunix$DISPLAY \
+=09=09--net=3Dhost \
+=09=09--shm-size '64gb' \
+=09=09-it --privileged \
+=09=09--name $MY_CONTAINER \
+=09=09-v /data/:/data/ \
+=09=09-v /opt/share/datasets/:/datasets/\
+=09=09-v /opt/share/models/:/models/\
+=09=09-v $PWD/:/workspace/ \
+=09=09-w /workspace/\
+=09=09-v /usr/bin/cnmon:/usr/bin/cnmon \
+=09=09$IMAGE_NAME \
+=09=09/bin/bash
+else
+=09docker start $MY_CONTAINER
+=09docker exec -ti $MY_CONTAINER /bin/bash
+fi
+</code></pre>=20
+<hr>=20
+<p>=E6=B3=A8=E6=84=8F=EF=BC=9A<strong>=E5=90=8E=E7=BB=AD=E6=B5=8B=E8=AF=95=
+=E6=89=80=E6=9C=89=E6=93=8D=E4=BD=9C=EF=BC=8C=E5=9D=87=E5=9C=A8=E5=AE=B9=E5=
+=99=A8=E5=86=85=E8=BF=9B=E8=A1=8C</strong>=E3=80=82</p>=20
+<h1 id=3D"=E4=BB=A3=E7=A0=81=E9=80=82=E9=85=8D">=E4=BB=A3=E7=A0=81=E9=80=82=
+=E9=85=8D</h1>=20
+<h2 id=3D"=E4=BB=A3=E7=A0=81=E5=92=8C=E6=A8=A1=E5=9E=8B=E4=B8=8B=E8=BD=BD">=
+=E4=BB=A3=E7=A0=81=E5=92=8C=E6=A8=A1=E5=9E=8B=E4=B8=8B=E8=BD=BD</h2>=20
+<p>=E5=A6=82=E6=9E=9C<strong>=E6=9C=AC=E5=9C=B0=E5=B7=B2=E7=BB=8F=E6=9C=89=
+=E4=BB=A3=E7=A0=81=E5=92=8C=E6=B5=8B=E8=AF=95=E6=A8=A1=E5=9E=8B</strong>=EF=
+=BC=8C<strong>=E5=BF=BD=E7=95=A5</strong>=E8=AF=A5=E6=AD=A5=E9=AA=A4=E3=80=
+=82</p>=20
+<pre><code>git clone https://github.com/WongKinYiu/yolov7.git
+wget https://github.com/WongKinYiu/yolov7/releases/download/v0.1/yolov7-w6.=
+pt
+</code></pre>=20
+<h2 id=3D"=E4=BB=A3=E7=A0=81=E9=80=82=E9=85=8D(MLU)">=E4=BB=A3=E7=A0=81=E9=
+=80=82=E9=85=8D(MLU)</h2>=20
+<h3 id=3D"=E4=BF=AE=E6=94=B9=E8=AF=B4=E6=98=8E">=E4=BF=AE=E6=94=B9=E8=AF=B4=
+=E6=98=8E</h3>=20
+<p>=E5=8E=9F=E7=94=9F=E4=BB=A3=E7=A0=81=E9=80=9A=E5=B8=B8=E5=8F=AF=E4=BB=A5=
+=E5=9F=BA=E4=BA=8ECUDA=E6=88=96=E8=80=85=E6=98=AFCPU=E8=BF=90=E8=A1=8C=EF=
+=BC=8C=E5=A6=82=E6=9E=9C=E5=9C=A8=E5=9F=BA=E4=BA=8EMLU=E4=BE=A7=E8=BF=90=E8=
+=A1=8C=EF=BC=8C=E9=9C=80=E8=A6=81=E5=AF=B9=E6=B5=8B=E8=AF=95=E4=BB=A3=E7=A0=
+=81=E8=BF=9B=E8=A1=8C=E5=BE=AE=E8=B0=83=EF=BC=8C=E4=B8=BB=E8=A6=81=E8=B0=83=
+=E6=95=B4=E7=82=B9=E4=B8=BA=EF=BC=9A<br> 1. =E4=BB=A3=E7=A0=81=E4=B8=AD=E5=
+=AF=B9device=E7=9A=84=E6=93=8D=E4=BD=9C=EF=BC=8C=E5=A6=82=EF=BC=9A.cuda=E4=
+=BF=AE=E6=94=B9=E4=B8=BA.mlu=EF=BC=8C=E4=BF=AE=E6=94=B9=E8=A7=84=E5=88=99 =
+=E5=8F=AF=E4=BB=A5=E5=8F=82=E7=9C=8B=E5=AF=92=E6=AD=A6=E7=BA=AA=E5=AE=98=E6=
+=96=B9=E6=96=87=E6=A1=A3=EF=BC=9A=C2=AB<a href=3D"https://www.cambricon.com=
+/docs/sdk_1.12.0/cambricon_pytorch_1.14.0/porting_1.9/index.html">=E5=AF=92=
+=E6=AD=A6=E7=BA=AAPyTorch v1.9=E7=BD=91=E7=BB=9C=E7=A7=BB=E6=A4=8D=E6=89=8B=
+=E5=86=8C</a>=C2=BB=E5=92=8C=C2=AB<a href=3D"https://www.cambricon.com/docs=
+/sdk_1.12.0/cambricon_pytorch_1.14.0/api_support_1.9/index.html">=E5=AF=92=
+=E6=AD=A6=E7=BA=AAPyTorch v1.9 API =E6=94=AF=E6=8C=81=E5=88=97=E8=A1=A8</a>=
+=C2=BB=E6=96=87=E6=A1=A3=E3=80=82</p>=20
+<h3 id=3D"=E4=BB=A3=E7=A0=81=E4=BF=AE=E6=94=B9">=E4=BB=A3=E7=A0=81=E4=BF=AE=
+=E6=94=B9</h3>=20
+<h3 id=3D"=E4=BD=BF=E7=94=A8torch_gpu2mlu=E5=B7=A5=E5=85=B7=E8=BF=9B=E8=A1=
+=8C=E4=BF=AE=E6=94=B9">=E4=BD=BF=E7=94=A8torch_gpu2mlu=E5=B7=A5=E5=85=B7=E8=
+=BF=9B=E8=A1=8C=E4=BF=AE=E6=94=B9</h3>=20
+<pre><code>python /torch/src/catch/tools/torch_gpu2mlu.py -i yolov7/
+</code></pre>=20
+<pre><code># Cambricon PyTorch Model Migration Report
+Official PyTorch model scripts:  /home/share/jinrong/renshou/guoshoucai/sam=
+ples/1-yolov7/yolov7
+Cambricon PyTorch model scripts:  /home/share/jinrong/renshou/guoshoucai/sa=
+mples/1-yolov7/yolov7_mlu
+Migration Report:  /home/share/jinrong/renshou/guoshoucai/samples/1-yolov7/=
+yolov7_mlu/report.md
+
+</code></pre>=20
+<p>=E5=A4=87=E6=B3=A8=EF=BC=9A=E4=BF=AE=E6=94=B9=E5=90=8E=E4=BC=9A=E7=94=9F=
+=E6=88=90=E5=B8=A6**_mlu** =E7=9B=AE=E5=BD=95=EF=BC=8C=E5=A6=82yolov7_mlu=
+=EF=BC=8C=E5=90=8C=E6=97=B6=E4=BC=9A=E7=94=9F=E6=88=90=E4=BB=A3=E7=A0=81=E4=
+=BF=AE=E6=94=B9=E8=AE=B0=E5=BD=95=E7=AD=89=E4=BF=A1=E6=81=AF=EF=BC=8C=E8=AF=
+=A6=E7=BB=86=E5=8F=82=E7=9C=8B<a href=3D"https://www.cambricon.com/docs/sdk=
+_1.12.0/cambricon_pytorch_1.14.0/porting_1.9/index.html">=E5=AF=92=E6=AD=A6=
+=E7=BA=AAPyTorch v1.9=E7=BD=91=E7=BB=9C=E7=A7=BB=E6=A4=8D=E6=89=8B=E5=86=8C=
+</a>=E6=96=87=E6=A1=A3<a href=3D"https://www.cambricon.com/docs/sdk_1.12.0/=
+cambricon_pytorch_1.14.0/porting_1.9/pytorch_5_porting_tools/pytorch_portin=
+g.html">5. =E4=BD=BF=E7=94=A8=E5=B7=A5=E5=85=B7=E8=BF=81=E7=A7=BB =C2=BB 5.=
+1. torch_gpu2mlu</a>=E7=AB=A0=E8=8A=82=E3=80=82</p>=20
+<h3 id=3D"=E5=85=B6=E5=AE=83=E4=BB=A3=E7=A0=81=E4=BF=AE=E6=94=B9">=E5=85=B6=
+=E5=AE=83=E4=BB=A3=E7=A0=81=E4=BF=AE=E6=94=B9</h3>=20
+<ul>=20
+<li>=E6=B3=A8=E9=87=8A=E6=8E=89DP =E4=BB=A3=E7=A0=81=E5=A6=82=EF=BC=9Atorch=
+.nn.DataParallel=E4=BB=A3=E7=A0=81=EF=BC=8C=E5=A4=9A=E5=8D=A1=E9=87=87=E7=
+=94=A8DDP=E6=96=B9=E5=BC=8F(=E6=96=87=E4=BB=B6train.py =E5=92=8C train_aux.=
+py)</li>=20
+</ul>=20
+<pre><code>    # DP mode
+#    if mlu and rank =3D=3D -1 and torch.mlu.device_count() &gt; 1:
+#        model =3D torch.nn.DataParallel(model)
+
+</code></pre>=20
+<ul>=20
+<li>=E4=BF=AE=E6=94=B9utils/loss.py=E4=B8=AD=E7=9A=84class ComputeLossAuxOT=
+A=EF=BC=8C=E5=B0=86gain=E7=9A=84=E5=88=9D=E5=A7=8B=E5=8C=96=E7=94=B1long=E5=
+=9E=8B=E8=AE=BE=E7=BD=AE=E4=B8=BAint=E5=9E=8B=EF=BC=8C=E5=8D=B3 gain =3D to=
+rch.ones(7, device=3Dtargets.device).int()=E3=80=82(<strong>=E6=9C=89=E5=A4=
+=9A=E5=A4=84=EF=BC=8C=E9=83=BD=E9=9C=80=E8=A6=81=E4=BF=AE=E6=94=B9=E4=B8=8B=
+</strong>)</li>=20
+</ul>=20
+<pre><code>#gain =3D torch.ones(7, device=3Dtargets.device).long()  # norma=
+lized to gridspace gain
+gain =3D torch.ones(7, device=3Dtargets.device).int()  # normalized to grid=
+space gain
+gain[2:6] =3D torch.tensor(p[i].shape)[[3, 2, 3, 2]]  # xyxy gain
+</code></pre>=20
+<p>=E5=A4=87=E6=B3=A8=EF=BC=9A=E4=BD=BF=E7=94=A8<strong>long()</strong>=EF=
+=BC=8C=E7=84=B6=E5=90=8E=E8=BF=9B=E8=A1=8C<strong>=E5=88=87=E7=89=87</stron=
+g>=E7=9A=84=E4=BD=8D=E7=BD=AE=E9=9C=80=E8=A6=81=E8=BF=9B=E8=A1=8C=E4=BF=AE=
+=E6=94=B9</p>=20
+<h2 id=3D"=E9=AA=8C=E8=AF=81=E6=B5=8B=E8=AF=95=EF=BC=88MLU=EF=BC=89">=E9=AA=
+=8C=E8=AF=81=E6=B5=8B=E8=AF=95=EF=BC=88MLU=EF=BC=89</h2>=20
+<p>=E6=B5=8B=E8=AF=95=E6=97=B6=E9=9C=80=E8=A6=81=E7=A1=AE=E8=AE=A4=E5=BD=93=
+=E5=89=8D=E8=BF=90=E8=A1=8C=E7=8E=AF=E5=A2=83=E4=BF=A1=E6=81=AF=EF=BC=8C=E7=
+=B3=BB=E7=BB=9F=E4=BE=9D=E8=B5=96=E3=80=81=E6=95=B0=E6=8D=AE=E9=9B=86=E3=80=
+=81=E6=B5=8B=E8=AF=95=E6=A8=A1=E5=9E=8B=E7=AD=89</p>=20
+<h3 id=3D"=E5=AE=89=E8=A3=85=E4=BE=9D=E8=B5=96">=E5=AE=89=E8=A3=85=E4=BE=9D=
+=E8=B5=96</h3>=20
+<pre><code>cd yolov7_mlu
+#=E6=B3=A8=E9=87=8A=E6=8E=89torch=E7=9B=B8=E5=85=B3=E7=9A=84=E5=AE=89=E8=A3=
+=85(=E5=AE=B9=E5=99=A8=E5=86=85=E5=B7=B2=E7=BB=8F=E5=AE=89=E8=A3=85=E6=94=
+=AF=E6=8C=81MLU=E7=9A=84TORCH)
+sed -i 's/torch/# torch/' requirements.txt
+pip install -r requirements.txt
+pip install pycocotools
+</code></pre>=20
+<h3 id=3D"=E6=95=B0=E6=8D=AE=E9=9B=86=E5=87=86=E5=A4=87">=E6=95=B0=E6=8D=AE=
+=E9=9B=86=E5=87=86=E5=A4=87</h3>=20
+<p>=E5=AE=98=E6=96=B9=E9=BB=98=E8=AE=A4=E4=BD=BF=E7=94=A8coco=E6=95=B0=E6=
+=8D=AE=E9=9B=86=EF=BC=8C=E9=BB=98=E8=AE=A4=E4=BB=A3=E7=A0=81=E6=95=B0=E6=8D=
+=AE=E9=9B=86data/coco.yaml =E6=8F=8F=E8=BF=B0=EF=BC=8C=E8=B7=AF=E5=BE=84=E4=
+=B8=BA=E5=BD=93=E5=89=8D=E7=9B=AE=E5=BD=95./coco/=E4=B8=8B=EF=BC=8C=E5=A6=
+=82=E6=9E=9C=E5=AE=A2=E6=88=B7=E4=BD=BF=E7=94=A8=E8=87=AA=E5=B7=B1=E6=95=B0=
+=E6=8D=AE=E9=9B=86=EF=BC=8C=E6=8C=89=E7=85=A7=E5=AE=9E=E9=99=85=E8=BF=9B=E8=
+=A1=8C=E8=B7=AF=E5=BE=84=E8=B0=83=E6=95=B4=E3=80=82</p>=20
+<pre><code>cd yolov7_mlu
+
+mkdir coco
+ln -sf =E6=95=B0=E6=8D=AE=E9=9B=86=E8=B7=AF=E5=BE=84 .
+
+</code></pre>=20
+<h3 id=3D"=E8=AE=AD=E7=BB=83=E9=AA=8C=E8=AF=81">=E8=AE=AD=E7=BB=83=E9=AA=8C=
+=E8=AF=81</h3>=20
+<p>=E6=B5=8B=E8=AF=95=E5=91=BD=E4=BB=A4=E5=90=8C=E5=8E=9F=E7=94=9F=E4=BB=A3=
+=E7=A0=81=EF=BC=8C=E6=B3=A8=E6=84=8F=E5=8D=95GPU=E5=92=8C=E5=88=86=E5=B8=83=
+=E5=BC=8F=E8=AE=AD=E7=BB=83=E5=B7=AE=E5=BC=82=E3=80=82</p>=20
+<pre><code>
+# =E5=9F=BA=E4=BA=8E=E5=88=86=E9=83=A8=E7=BD=B2=E8=BF=90=E8=A1=8C=E8=A7=81=
+=E5=A4=9AMLU=E8=AE=AD=E7=BB=83
+
+export MLU_VISIBLE_DEVICES=3D0,1,2,3
+
+# train p5 models
+python -m torch.distributed.launch --nproc_per_node 4 --master_port 9527 tr=
+ain.py --workers 8 --device 0,1,2,3 --sync-bn --batch-size 128 --data data/=
+coco.yaml --img 640 640 --cfg cfg/training/yolov7.yaml --weights '' --name =
+yolov7 --hyp data/hyp.scratch.p5.yaml
+
+
+# train p6 models
+
+python -m torch.distributed.launch --nproc_per_node 4 --master_port 9527 tr=
+ain_aux.py --workers 8 --device 0,1,2,3 --sync-bn --batch-size 32 --data da=
+ta/coco.yaml --img 1280 1280 --cfg cfg/training/yolov7-w6.yaml --weights ''=
+ --name yolov7-w6 --hyp data/hyp.scratch.p6.yaml=20
+
+# =E5=8D=95=E8=8A=AFMLU=E8=AE=AD=E7=BB=83
+
+#train p5 models
+python train.py --workers 8 --device 0 --batch-size 32 --data data/coco.yam=
+l --img 640 640 --cfg cfg/training/yolov7.yaml --weights '' --name yolov7 -=
+-hyp data/hyp.scratch.p5.yaml
+
+# train p6 models
+python train_aux.py --workers 8 --device 0 --batch-size 16 --data data/coco=
+.yaml --img 1280 1280 --cfg cfg/training/yolov7-w6.yaml --weights '' --name=
+ yolov7-w6 --hyp data/hyp.scratch.p6.yaml
+
+
+</code></pre>=20
+<pre><code>Epoch   mlu_mem       box       obj       cls     total    label=
+s  img_size
+3/299       17G   0.04379   0.05926   0.03211    0.1352        93      1280=
+: 100%|=E2=96=88=E2=96=88=E2=96=88=E2=96=88=E2=96=88=E2=96=88=E2=96=88=E2=
+=96=88=E2=96=88=E2=96=88=E2=96=88=E2=96=88=E2=96=88=E2=96=88=E2=96=88=E2=96=
+=88=E2=96=88=E2=96=88=E2=96=88=E2=96=88=E2=96=88=E2=96=88=E2=96=88=E2=96=88=
+=E2=96=88=E2=96=88=E2=96=88=E2=96=88=E2=96=88=E2=96=88=E2=96=88=E2=96=88=E2=
+=96=88=E2=96=88=E2=96=88=E2=96=88=E2=96=88=E2=96=88=E2=96=88=E2=96=88=E2=96=
+=88=E2=96=88=E2=96=88=E2=96=88=E2=96=88=E2=96=88=E2=96=88=E2=96=88=E2=96=88=
+=E2=96=88=E2=96=88=E2=96=88=E2=96=88=E2=96=88=E2=96=88=E2=96=88=E2=96=88=E2=
+=96=88=E2=96=88=E2=96=88=E2=96=88=E2=96=88=E2=96=88=E2=96=88=E2=96=88=E2=96=
+=88=E2=96=88=E2=96=88=E2=96=88=E2=96=88=E2=96=88=E2=96=88=E2=96=88=E2=96=88=
+=E2=96=88=E2=96=88=E2=96=88=E2=96=88=E2=96=88=E2=96=88=E2=96=88=E2=96=88=E2=
+=96=88=E2=96=88=E2=96=88| 3697/3697 [2:02:02&lt;00:00,  1.98s/it]
+Class      Images      Labels           P           R      mAP@.5  mAP@.5:.=
+95: 100%|=E2=96=88=E2=96=88=E2=96=88=E2=96=88=E2=96=88=E2=96=88=E2=96=88=E2=
+=96=88=E2=96=88=E2=96=88=E2=96=88=E2=96=88=E2=96=88=E2=96=88=E2=96=88=E2=96=
+=88=E2=96=88=E2=96=88=E2=96=88=E2=96=88=E2=96=88=E2=96=88=E2=96=88=E2=96=88=
+=E2=96=88=E2=96=88=E2=96=88=E2=96=88=E2=96=88=E2=96=88=E2=96=88=E2=96=88=E2=
+=96=88=E2=96=88=E2=96=88=E2=96=88=E2=96=88=E2=96=88=E2=96=88=E2=96=88=E2=96=
+=88=E2=96=88=E2=96=88=E2=96=88=E2=96=88=E2=96=88=E2=96=88=E2=96=88=E2=96=88=
+=E2=96=88=E2=96=88=E2=96=88=E2=96=88=E2=96=88=E2=96=88=E2=96=88=E2=96=88=E2=
+=96=88=E2=96=88=E2=96=88=E2=96=88=E2=96=88=E2=96=88=E2=96=88=E2=96=88=E2=96=
+=88=E2=96=88=E2=96=88=E2=96=88=E2=96=88=E2=96=88=E2=96=88=E2=96=88=E2=96=88=
+=E2=96=88=E2=96=88=E2=96=88| 313/313 [04:24&lt;00:00,  1.19it/s]
+all        5000       36780       0.402       0.315        0.29       0.183
+
+</code></pre>=20
+<p>=E5=A4=87=E6=B3=A8:<br> - yolov7-w6 <strong>=E9=BB=98=E8=AE=A4=E5=8F=82=
+=E6=95=B0=E8=A6=8130G=E5=86=85=E5=AD=98=EF=BC=8CX8=E5=8D=95</strong>=E8=8A=
+=AF24G=EF=BC=8C=E4=BC=9A=E5=87=BA=E7=8E=B0=E7=94=B3=E8=AF=B7=E5=A4=B1=E8=B4=
+=A5<br> - X8=E6=98=AF=E4=B8=80=E5=8D=A1=E5=8F=8C=E8=8A=AF=EF=BC=8C=E5=8F=AF=
+=E4=BD=BF=E7=94=A8=E5=88=86=E5=B8=83=E5=BC=8F=E5=B0=86=E5=8D=95=E5=8D=A1=E5=
+=AE=8C=E6=95=B4=E5=88=A9=E7=94=A8=E8=B5=B7=E6=9D=A5=E3=80=82</p>=20
+<h3 id=3D"=E6=8E=A8=E7=90=86=E9=AA=8C=E8=AF=81">=E6=8E=A8=E7=90=86=E9=AA=8C=
+=E8=AF=81</h3>=20
+<ul>=20
+<li>=E9=AA=8C=E8=AF=81=E5=91=BD=E4=BB=A4</li>=20
+</ul>=20
+<pre><code>python test.py --data data/coco.yaml --img 640 --batch 32 --conf=
+ 0.001 --iou 0.65 --device 0 --weights yolov7-w6.pt --name yolov7_640_val
+</code></pre>=20
+<ul>=20
+<li>=E6=B5=8B=E8=AF=95=E7=BB=93=E6=9E=9C</li>=20
+</ul>=20
+<pre><code>val: Scanning 'coco/val2017.cache' images and labels... 5000 fou=
+nd, 0 missing, 48 empty, 0 corrupted: 100%|=E2=96=88=E2=96=88=E2=96=88=E2=
+=96=88=E2=96=88=E2=96=88=E2=96=88=E2=96=88=E2=96=88=E2=96=88=E2=96=88=E2=96=
+=88=E2=96=88=E2=96=88=E2=96=88=E2=96=88=E2=96=88=E2=96=88=E2=96=88=E2=96=88=
+=E2=96=88=E2=96=88=E2=96=88=E2=96=88=E2=96=88=E2=96=88=E2=96=88=E2=96=88=E2=
+=96=88=E2=96=88=E2=96=88=E2=96=88=E2=96=88=E2=96=88=E2=96=88=E2=96=88=E2=96=
+=88=E2=96=88=E2=96=88=E2=96=88=E2=96=88=E2=96=88=E2=96=88=E2=96=88=E2=96=88=
+=E2=96=88=E2=96=88=E2=96=88=E2=96=88=E2=96=88=E2=96=88=E2=96=88=E2=96=88=E2=
+=96=88=E2=96=88=E2=96=88=E2=96=88=E2=96=88=E2=96=88=E2=96=88=E2=96=88=E2=96=
+=88=E2=96=88=E2=96=88=E2=96=88=E2=96=88=E2=96=88=E2=96=88=E2=96=88=E2=96=88=
+=E2=96=88=E2=96=88=E2=96=88=E2=96=88=E2=96=88| 5000/5000 [00:00&lt;?, ?it/s=
+]
+               Class      Images      Labels           P           R      m=
+AP@.5  mAP@.5:.95:   0%|                                                   =
+                                    | 0/157 [00:00&lt;?, ?it/s][2023-6-14 1=
+4:47:34] [CNNL] [Warning]:[cnnlSetNmsDescriptor_v2] is deprecated and will =
+be removed in the future release, please use [cnnlSetNmsDescriptor_v5] inst=
+ead.
+[2023-6-14 14:47:34] [CNNL] [Warning]:[cnnlClip] is deprecated and will be =
+removed in the future release, please use [cnnlClip_v2] instead.
+               Class      Images      Labels           P           R      m=
+AP@.5  mAP@.5:.95: 100%|=E2=96=88=E2=96=88=E2=96=88=E2=96=88=E2=96=88=E2=96=
+=88=E2=96=88=E2=96=88=E2=96=88=E2=96=88=E2=96=88=E2=96=88=E2=96=88=E2=96=88=
+=E2=96=88=E2=96=88=E2=96=88=E2=96=88=E2=96=88=E2=96=88=E2=96=88=E2=96=88=E2=
+=96=88=E2=96=88=E2=96=88=E2=96=88=E2=96=88=E2=96=88=E2=96=88=E2=96=88=E2=96=
+=88=E2=96=88=E2=96=88=E2=96=88=E2=96=88=E2=96=88=E2=96=88=E2=96=88=E2=96=88=
+=E2=96=88=E2=96=88=E2=96=88=E2=96=88=E2=96=88=E2=96=88=E2=96=88=E2=96=88=E2=
+=96=88=E2=96=88=E2=96=88=E2=96=88=E2=96=88=E2=96=88=E2=96=88=E2=96=88=E2=96=
+=88=E2=96=88=E2=96=88=E2=96=88=E2=96=88=E2=96=88=E2=96=88=E2=96=88=E2=96=88=
+=E2=96=88=E2=96=88=E2=96=88=E2=96=88=E2=96=88=E2=96=88=E2=96=88=E2=96=88=E2=
+=96=88=E2=96=88=E2=96=88=E2=96=88=E2=96=88| 157/157 [02:17&lt;00:00,  1.15i=
+t/s]
+                 all        5000       36780       0.724       0.622       =
+0.671       0.485
+Speed: 6.6/2.6/9.2 ms inference/NMS/total per 640x640 image at batch-size 3=
+2
+
+Evaluating pycocotools mAP... saving runs/test/yolov7_640_val/yolov7-w6_pre=
+dictions.json...
+loading annotations into memory...
+Done (t=3D0.47s)
+creating index...
+index created!
+Loading and preparing results...
+DONE (t=3D3.23s)
+creating index...
+index created!
+Running per image evaluation...
+Evaluate annotation type *bbox*
+DONE (t=3D59.71s).
+Accumulating evaluation results...
+DONE (t=3D9.44s).
+ Average Precision  (AP) @[ IoU=3D0.50:0.95 | area=3D   all | maxDets=3D100=
+ ] =3D 0.501
+ Average Precision  (AP) @[ IoU=3D0.50      | area=3D   all | maxDets=3D100=
+ ] =3D 0.680
+ Average Precision  (AP) @[ IoU=3D0.75      | area=3D   all | maxDets=3D100=
+ ] =3D 0.541
+ Average Precision  (AP) @[ IoU=3D0.50:0.95 | area=3D small | maxDets=3D100=
+ ] =3D 0.301
+ Average Precision  (AP) @[ IoU=3D0.50:0.95 | area=3Dmedium | maxDets=3D100=
+ ] =3D 0.553
+ Average Precision  (AP) @[ IoU=3D0.50:0.95 | area=3D large | maxDets=3D100=
+ ] =3D 0.693
+ Average Recall     (AR) @[ IoU=3D0.50:0.95 | area=3D   all | maxDets=3D  1=
+ ] =3D 0.379
+ Average Recall     (AR) @[ IoU=3D0.50:0.95 | area=3D   all | maxDets=3D 10=
+ ] =3D 0.619
+ Average Recall     (AR) @[ IoU=3D0.50:0.95 | area=3D   all | maxDets=3D100=
+ ] =3D 0.668
+ Average Recall     (AR) @[ IoU=3D0.50:0.95 | area=3D small | maxDets=3D100=
+ ] =3D 0.483
+ Average Recall     (AR) @[ IoU=3D0.50:0.95 | area=3Dmedium | maxDets=3D100=
+ ] =3D 0.732
+ Average Recall     (AR) @[ IoU=3D0.50:0.95 | area=3D large | maxDets=3D100=
+ ] =3D 0.843
+Results saved to runs/test/yolov7_640_val
+</code></pre>
+</div>
+<p></p>
+    </div>
+</body>
+</html>
+------=_Part_12208_197670720.1732848316259--

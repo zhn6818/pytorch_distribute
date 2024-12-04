@@ -1,6 +1,7 @@
 import argparse
 import time
 import torch
+import torch_mlu
 import torch.nn as nn
 import torch.nn.parallel
 import torch.backends.cudnn as cudnn
@@ -19,7 +20,7 @@ import torch.optim as optim
 import torch.multiprocessing as mp
 
 parser = argparse.ArgumentParser(description='PyTorch ImageNet Training')
-parser.add_argument('--local_rank', default=-1, type=int, help='node rank for distributed training')
+parser.add_argument('--local-rank', default=0, type=int, help='node rank for distributed training')
 parser.add_argument('--seed', default=None, type=int, help='seed for initializing training. ')
 parser.add_argument('--batch_size','--batch-size', default=256, type=int)
 parser.add_argument('--epochs', default=200, type=int)
@@ -30,7 +31,7 @@ parser.add_argument('--port', default='23456', type=str)
 def main():
     args = parser.parse_args()
     args.nprocs = torch.mlu.device_count()
-
+    # local_rank = 0
     main_worker(args.local_rank, args.nprocs, args)
 
 '''
@@ -48,8 +49,10 @@ def main_worker(local_rank, nprocs, args):
     init_method = 'env://'
 
     # 1. 分布式初始化，对于每一个进程都需要进行初始化，所以定义在 main_worker中
-    cudnn.benchmark = True
-    dist.init_process_group(backend='nccl', init_method=init_method, world_size=args.nprocs,
+    # 对于寒武纪MLU设备，不需要设置cudnn.benchmark，因为这是NVIDIA CUDA特有的优化选项
+    # 寒武纪MLU有自己的优化机制，会自动选择最优的计算路径
+    # pass  # 移除cudnn相关设置
+    dist.init_process_group(backend='cncl', init_method=init_method, world_size=args.nprocs,
                             rank=local_rank)
 
     # 2. 基本定义，模型-损失函数-优化器

@@ -17,8 +17,8 @@ def validate(val_loader, model, criterion, local_rank, args):
     with torch.no_grad():
         end = time.time()
         for i, (images, target) in enumerate(val_loader):
-            images = images.cuda(local_rank, non_blocking=True)
-            target = target.cuda(local_rank, non_blocking=True)
+            images = images.mlu(local_rank, non_blocking=True)
+            target = target.mlu(local_rank, non_blocking=True)
 
             # compute output
             output = model(images)
